@@ -1,5 +1,8 @@
 # custom_boolean_style 模块
 
+## 效果图
+<img width="1280" alt="862389e0ee7b0397e32ae9e975930a8" src="https://github.com/user-attachments/assets/1559e416-b27a-4688-b8f7-3fa2a46ff8e0">
+
 ## 概述
 
 `custom_boolean_style` 模块是 Odoo 的自定义布尔字段实现，提供了一个新的布尔字段组件 `late_boolean`，它具有自定义样式和行为。用户可以通过该模块轻松地在 Odoo 的表单视图中使用该布尔字段。
