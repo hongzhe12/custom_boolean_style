@@ -21,15 +21,8 @@
 
 要在其他模块中使用 `late_boolean` 布尔字段，请按照以下步骤操作：
 
-### 1. 引入模块依赖
 
-在你的模块的 `__manifest__.py` 文件中，将 `custom_boolean_style` 添加到 `depends` 列表中。例如：
-
-```python
-'depends': ['base', 'custom_boolean_style'],
-```
-
-### 2. 定义字段
+### 1. 定义字段
 
 在你的模型中，使用 `late_boolean` 类型定义布尔字段。例如：
 
@@ -43,7 +36,7 @@ class YourModel(models.Model):
     is_active = fields.Boolean(string='是否活跃')
 ```
 
-### 3. 更新视图
+### 2. 更新视图
 
 在相应的 XML 视图文件中，确保你在表单视图中添加了该布尔字段。例如：
 
@@ -63,7 +56,7 @@ class YourModel(models.Model):
 </record>
 ```
 
-### 4. 访问模块
+### 3. 访问模块
 
 安装和配置完成后，你可以在 Odoo 的表单视图中看到 `late_boolean_field`，并可以通过点击复选框来切换状态。
 
