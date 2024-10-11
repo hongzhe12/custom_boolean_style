@@ -1,0 +1,14 @@
+.custom-boolean-field {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox {
+    margin-right: 5px; /* 复选框与文本之间的间距 */
+    cursor: pointer;
+}
+
+.status-text {
+    font-size: 14px; /* 状态文本大小 */
+    /*color: #000000 !important; !* 状态文本颜色 *!*/
+}
