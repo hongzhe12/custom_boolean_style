@@ -1,7 +1,8 @@
 # custom_boolean_style 模块
 
 ## 效果图
-<img width="1280" alt="862389e0ee7b0397e32ae9e975930a8" src="https://github.com/user-attachments/assets/1559e416-b27a-4688-b8f7-3fa2a46ff8e0">
+![image](https://github.com/user-attachments/assets/bfefe1fa-b015-41b1-8053-4dffed539db7)
+
 
 ## 概述
 
