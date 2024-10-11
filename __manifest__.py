@@ -2,21 +2,19 @@
 {
     'name': "custom_boolean_style",
 
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'summary': "自定义布尔字段样式模块，提供了美化的、功能增强的布尔字段组件。",
 
     'description': """
-        Long description of module's purpose
+        该模块实现了一个自定义布尔字段组件 `late_boolean`，
+        具有动态状态文本和自定义样式，旨在提升 Odoo 表单视图的用户体验。
+        用户可以通过简单的配置，在自定义模块中使用该布尔字段。
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "hongzhe",
+    'website': "https://github.com/hongzhe12/custom_boolean_style",
 
     # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
+    'category': 'User Interface',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
