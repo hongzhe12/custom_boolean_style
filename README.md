@@ -74,7 +74,7 @@ class YourModel(models.Model):
 
 ## 贡献
 
-欢迎任何对 `custom_boolean_style` 模块的贡献和建议！请通过 [GitHub](https://github.com/yourusername/custom_boolean_style) 提交问题或拉取请求。
+欢迎任何对 `custom_boolean_style` 模块的贡献和建议！请通过 [GitHub](https://github.com/hongzhe12/custom_boolean_style) 提交问题或拉取请求。
 
 ## 许可证
 
