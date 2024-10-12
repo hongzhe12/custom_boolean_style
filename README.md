@@ -64,6 +64,23 @@ class YourModel(models.Model):
 
 安装和配置完成后，你可以在 Odoo 的表单视图中看到 `late_boolean_field`，并可以通过点击复选框来切换状态。
 
+### 4. 选用自定义的样式应用到列表
+
+在视图文件中这样去使用
+```xml
+<tree string="产品列表" decoration-custom="is_selected">
+```
+
+如果需要修改，则修改`custom.css`文件即可。
+```css
+/* 自定义的列表项样式 */
+tr.o_data_row.text-custom{
+    background-color: #00c04f !important; /* 设置选中的背景颜色 */
+    color: #ffffff !important; /* 设置选中的文本颜色 */
+    font-weight: bold; /* 加粗文字 */
+}
+```
+
 ## 注意事项
 
 - 确保在 Odoo 16 及以上版本中使用该模块。
