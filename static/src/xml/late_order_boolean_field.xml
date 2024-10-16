@@ -1,6 +1,6 @@
 <templates xml:space="preserve">
-    <t t-name="custom_boolean_style.LateOrderBooleanField" owl="1">
-        <xpath expr="//input[@type='checkbox']" position="replace">
+    <t t-name="custom_boolean_style.LateOrderBooleanField" t-inherit="web.BooleanField" owl="1">
+        <xpath expr="//CheckBox" position="replace">
             <div class="custom-boolean-field">
                 <input
                     type="checkbox"
