@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom_boolean_style_custom_boolean_style,custom_boolean_style.custom_boolean_style,model_custom_boolean_style_custom_boolean_style,base.group_user,1,1,1,1

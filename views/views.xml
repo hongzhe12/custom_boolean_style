@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- 自定义字段 Form View -->
+    <record id="view_custom_boolean_style_custom_boolean_style_form" model="ir.ui.view">
+        <field name="name">custom_boolean_style_custom_boolean_style</field>
+        <field name="model">custom_boolean_style.custom_boolean_style</field>
+        <field name="arch" type="xml">
+            <form string="自定义字段">
+                <sheet>
+                    <group>
+                        <field name="is_active"/>
+                        <field name="name"/>
+                        <field name="value"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- 自定义字段 Tree View -->
+    <record id="view_custom__style_tree" model="ir.ui.view">
+        <field name="name">custom_boolean_style_custom_boolean_style</field>
+        <field name="model">custom_boolean_style.custom_boolean_style</field>
+        <field name="arch" type="xml">
+            <tree string="自定义字段">
+                <field name="is_active" widget="late_boolean"/>
+                <field name="name"/>
+                <field name="value"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- 自定义字段 Search View -->
+    <record id="view_custom_boolean_style_custom_boolean_style_search" model="ir.ui.view">
+        <field name="name">custom_boolean_style_custom_boolean_style</field>
+        <field name="model">custom_boolean_style.custom_boolean_style</field>
+        <field name="arch" type="xml">
+            <search string="自定义字段">
+                <field name="name" string="自定义字段号"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- 自定义字段 Action -->
+    <record id="action_custom_boolean_style_custom_boolean_style" model="ir.actions.act_window">
+        <field name="name">自定义字段信息</field>
+        <field name="res_model">custom_boolean_style.custom_boolean_style</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                创建第一个自定义字段信息
+            </p>
+        </field>
+    </record>
+
+
+    <!-- 自定义字段 Menuitem -->
+    <menuitem id="menu_custom_boolean_style_custom_boolean_style_root" name="自定义字段"/>
+    <menuitem id="menu_custom_boolean_style_custom_boolean_style" name="自定义字段信息"
+              parent="menu_custom_boolean_style_custom_boolean_style_root"
+              action="action_custom_boolean_style_custom_boolean_style" sequence="10"/>
+
+
+</odoo>

@@ -1,0 +1,12 @@
+/* 重写decoration-danger样式 */
+tr.o_data_row.text-danger {
+    background-color: #d26972 !important; /* 自定义背景色 */
+    color: #ffffff !important; /* 自定义文字颜色 */
+}
+
+/* 自定义的列表项样式 */
+tr.o_data_row.text-custom{
+    background-color: #00c04f !important; /* 设置选中的背景颜色 */
+    color: #ffffff !important; /* 设置选中的文本颜色 */
+    font-weight: bold; /* 加粗文字 */
+}

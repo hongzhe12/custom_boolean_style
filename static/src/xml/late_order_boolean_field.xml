@@ -1,0 +1,17 @@
+<templates xml:space="preserve">
+    <t t-name="custom_boolean_style.LateOrderBooleanField" owl="1">
+        <xpath expr="//input[@type='checkbox']" position="replace">
+            <div class="custom-boolean-field">
+                <input
+                    type="checkbox"
+                    t-att-checked="props.value"
+                    t-on-change="onChange"
+                    t-on-click="stopPropagation"
+                    class="custom-checkbox"
+                    title="点击以切换状态"
+                />
+                <span class="status-text" t-esc="props.value ? '已选中' : '未选择'"></span>
+            </div>
+        </xpath>
+    </t>
+</templates>
