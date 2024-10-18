@@ -4,22 +4,18 @@ import {registry} from "@web/core/registry";
 import {BooleanField} from "@web/views/fields/boolean/boolean_field";
 
 class LateOrderBooleanField extends BooleanField {
-    // 构造函数
-    constructor() {
-        super(...arguments);
-        this.stateText = this.props.value ? "已选中" : "未选择"; // 初始化状态文本
-    }
 
+    // 当组件值发生变化
     onChange(event) {
         const newValue = event.target.checked; // 获取新的复选框状态
         this.props.update(newValue); // 更新状态
         this.stateText = newValue ? "已选中" : "未选择"; // 更新状态文本
     }
 
+    // 点击的时候
     stopPropagation(event) {
         event.stopPropagation(); // 阻止事件冒泡，避免触发跳转
     }
-
 
     // 渲染方法
     getTemplate() {
